@@ -68,8 +68,8 @@ polinominal operator*(polinominal p, polinominal q){
 polinominal operator/(polinominal p, polinominal q){
     polinominal s;
     int d = p.deg-q.deg;
-    if(d<0)  {s.init(0,nullptr);
-    return s;}
+    if(d<0) {double*cf = new double[1]; cf[0]=0;s.init(0,cf);
+        return s;}
     double*cf = new double[d+1];
     for(int i=0; i<=d; ++i) cf[i]=0;
     s.init(d, cf);
