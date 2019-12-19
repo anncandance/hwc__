@@ -1,6 +1,3 @@
-#ifndef HWC_STRINGPTR_H
-#define HWC_STRINGPTR_H
-
 #include<string>
 #include<exception>
 #include<stdio.h>
@@ -107,4 +104,3 @@ public:
 };
 
 
-#endif //HWC_STRINGPTR_H
